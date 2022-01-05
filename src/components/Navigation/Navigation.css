@@ -1,0 +1,35 @@
+.header {
+    border-bottom: 2px solid black;
+}
+
+.header,
+.nav-bar {
+	display: flex;
+	justify-content: space-between;
+    align-items: center;
+    /* border: 2px solid red;  */
+}
+
+nav a {
+    /* border: 2px solid red; */
+	color: black;
+	text-decoration: none;
+    margin-right: 1em; 
+    padding: 0 2em;
+    margin-bottom: 5px; 
+}
+
+nav a:hover {
+    border: 1px solid black;
+}
+
+
+.image {
+    /* border: 2px solid red;  */
+    max-width: 15%;
+}
+
+nav a .image {
+    /* border: 2px solid red;  */
+    float: left; 
+}
