@@ -14,11 +14,11 @@ function SearchResults(props) {
 					<img
 						src={
 							image.data &&
-							`https://www.artic.edu/iiif/2/${image.id}/full/843,/0/default.jpg`
+							`https://www.artic.edu/iiif/2/${image.data.image_id}/full/843,/0/default.jpg`
 						}
-						alt={image.title}
+						alt={image.data.title}
 					/>
-					{console.log(image.api_link)}
+					{/* {console.log(image)} */}
 				</div>
 			))}
 		</div>
