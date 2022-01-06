@@ -1,0 +1,26 @@
+.home-gallery .home-btn {
+	position: relative;
+	/* height: 75vh; */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    
+}
+
+.home-gallery {
+	margin-top: 15px;
+}
+.home-gallery-images {
+	width: 1000px;
+	height: 600px;
+    object-fit: contain;
+}
+
+.home-btn {
+	cursor: pointer;
+	display: flex;
+	margin-right: auto;
+	margin-left: auto;
+	border: none;
+	background-color: white;
+}

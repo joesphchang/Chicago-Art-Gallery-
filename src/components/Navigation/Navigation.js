@@ -20,7 +20,7 @@ function Navigation(props) {
 					<Link to='/about'>About</Link>
 				</span>
 				<span className='nav-main-link'>
-					<Link to='/contact'>Contact</Link>
+					<Link to='/search'>Search</Link>
 				</span>
 			</nav>
 		</header>

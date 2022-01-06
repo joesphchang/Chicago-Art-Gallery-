@@ -7,13 +7,14 @@ import Navigation from './components/Navigation/Navigation';
 import Home from './components/Home/Home';
 import Gallery from './components/Gallery/Gallery';
 import About from './components/About/About';
-import Contact from './components/Contact/Contact';
+import Search from './components/Search/Search';
 import GalleryDetails from './components/GalleryDetails/GalleryDetails';
 
 // Style-sheets
 import './App.css';
 
 function App() {
+
   return (
     <div className="App">
      <nav className='main-navigation'>
@@ -24,7 +25,7 @@ function App() {
         <Route path='/' element={<Home />} />
         <Route path='/gallery' element={<Gallery />} />
         <Route path='/about' element={<About />} />
-        <Route path='/contact' element={<Contact />} />
+        <Route path='/search' element={<Search />} />
         <Route path='/gallerydetails/:id' element={<GalleryDetails /> } />
       </Routes>
      </main>
