@@ -34,7 +34,7 @@ function Search(props) {
 						return await response.json();
 					})
 				);
-				console.log(searchResults);
+				// console.log(searchResults);
 				setImages(searchResults);
 				setLastSearch(searchString);
 				setSearchString('');

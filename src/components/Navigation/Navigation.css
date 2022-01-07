@@ -1,5 +1,6 @@
 .header {
     border-bottom: 2px solid black;
+    padding-bottom: 10px;
 }
 
 .header,
@@ -26,10 +27,14 @@ nav a:hover {
 
 .image {
     /* border: 2px solid red;  */
-    max-width: 15%;
+    max-width: 13%;
 }
 
 nav a .image {
     /* border: 2px solid red;  */
     float: left; 
+}
+
+nav a .header-title {
+    border: none;
 }

@@ -5,26 +5,31 @@ import HomeBigImage from './HomeBigImage';
 
 const images = [
 	{
+		id: 0,
 		source:
 			'https://www.artic.edu/iiif/2/ec1f6262-09c2-8f7e-baa9-9c0b267337ff/full/843,/0/default.jpg',
 		alt: 'The Petit Creuse River',
 	},
 	{
+		id: 1,
 		source:
 			'https://www.artic.edu/iiif/2/81b5faed-1b74-4689-ae83-50fcd5e8f32e/full/843,/0/default.jpg',
 		alt: 'Zapata',
 	},
 	{
+		id: 2,
 		source:
 			'https://www.artic.edu/iiif/2/29ce164c-ae91-8b2c-45b9-a47640a4fc26/full/843,/0/default.jpg',
 		alt: 'untitled',
 	},
 	{
+		id: 3,
 		source:
 			'https://www.artic.edu/iiif/2/fdc1a755-ff86-487d-f16b-f03c40a30bee/full/843,/0/default.jpg',
 		alt: 'Madam Pompadour',
 	},
 	{
+		id: 4,
 		source:
 			'https://www.artic.edu/iiif/2/4d1b3ad0-14db-0d21-ad9f-17abb8bdfbb5/full/843,/0/default.jpg',
         alt: 'Bordighera'
@@ -51,7 +56,7 @@ function Home(props) {
 							<img
 								src={image.source}
 								alt={image.alt}
-                                key={image.source}
+                                key={image.id}
 								className='home-gallery-images'
 							/>
 						)}
