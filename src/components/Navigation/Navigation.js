@@ -6,8 +6,8 @@ import './Navigation.css';
 function Navigation(props) {
 	return (
 		<header className='header'>
-			<Link to='/' className='header-title'>
-				<h1>Art Institute of Chicago</h1>
+			<Link to='/' >
+				<h1 className='header-title'>Art Institute of Chicago</h1>
 				{/* <img src={logo} alt='chicago-art-institute' className='image' /> */}
 			</Link>
 			<nav className='nav-bar'>

@@ -32,7 +32,7 @@ function App() {
 				</Routes>
 			</main>
 			<footer className='footer'>
-				<h4>Created by Joey Chang</h4>
+				<h4>Website by Joey Chang</h4>
 				<div className='footer-image'>
 					<img src={Logo} alt='chicago-art-institute' className='image' />
 				</div>

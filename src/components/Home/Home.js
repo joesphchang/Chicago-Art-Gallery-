@@ -1,7 +1,6 @@
 import React from 'react';
 import './Home.css';
 import { useState } from 'react';
-import HomeBigImage from './HomeBigImage';
 
 const images = [
 	{
@@ -56,7 +55,7 @@ function Home(props) {
 							<img
 								src={image.source}
 								alt={image.alt}
-                                key={image.id}
+                                key={index}
 								className='home-gallery-images'
 							/>
 						)}

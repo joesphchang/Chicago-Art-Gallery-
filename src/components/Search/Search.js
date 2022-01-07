@@ -1,11 +1,12 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
 import SearchResults from './SearchResults';
+import './Search.css';
 
 function Search(props) {
 	const searchOptions = {
 		api: 'https://api.artic.edu/api/v1/artworks',
-		numberOfResults: 25,
+		numberOfResults: 15,
 		endpoint: '/search',
 	};
 
@@ -63,14 +64,19 @@ function Search(props) {
 	return (
 		<form onSubmit={handleSubmit}>
 			<input
-				placeholder='Search For ArtWork'
+				placeholder='Search For Artwork'
 				type='text'
 				name='searchString'
 				required
 				onChange={handleChange}
+				className='input-search'
 				value={searchString}
 			/>
-			<button type='submit'>Search</button>
+
+			<button type='submit' className='btn-search'>
+				Search
+			</button>
+			
 			<SearchResults images={images} />
 		</form>
 	);

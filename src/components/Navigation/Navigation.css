@@ -1,13 +1,13 @@
 .header {
-    border-bottom: 2px solid black;
+    /* border-bottom: 2px solid black; */
     padding-bottom: 10px;
 }
 
 .header,
 .nav-bar {
-	display: flex;
+	/* display: flex;
 	justify-content: space-between;
-    align-items: center;
+    align-items: center; */
     /* border: 2px solid red;  */
 }
 
@@ -21,7 +21,12 @@ nav a {
 }
 
 nav a:hover {
-    border: 1px solid black;
+    border: none;
+    color: red;
+}
+
+nav a:active {
+
 }
 
 
@@ -33,8 +38,4 @@ nav a:hover {
 nav a .image {
     /* border: 2px solid red;  */
     float: left; 
-}
-
-nav a .header-title {
-    border: none;
 }

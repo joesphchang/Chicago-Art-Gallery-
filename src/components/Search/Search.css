@@ -1,0 +1,42 @@
+.gallery-container {
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    gap: 15px;
+}
+
+.main-gallery-card {
+    display: flex;
+    align-items: center;
+    height: 500px;
+    color: black;
+    border: 1px solid black;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.card-image {
+    object-fit: contain;
+    margin-left: 8px;
+}
+
+.gallery-text {
+    font-weight: 200;
+}
+
+div a:hover {
+    border: none;
+}
+
+.input-search {
+    margin-top: 20px;
+    margin-right: 20px;
+    width: 200px;
+}
+
+.btn-search {
+    border: none;
+    background-color: white; 
+}
