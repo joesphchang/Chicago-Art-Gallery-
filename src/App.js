@@ -16,6 +16,8 @@ import Logo from './components/assets/chicago-art-logo.png';
 import './App.css';
 
 function App() {
+	const [galleryIds, setGalleryIds] = useState([]);
+
 	return (
 		<div className='App'>
 			<nav className='main-navigation'>
@@ -24,11 +26,32 @@ function App() {
 			<main className='main-body'>
 				<Routes>
 					<Route path='/' element={<Home />} />
-					<Route path='/gallery' element={<Gallery />} />
+					<Route
+						path='/gallery'
+						element={
+							<Gallery galleryIds={galleryIds} setGalleryIds={setGalleryIds} />
+						}
+					/>
 					<Route path='/about' element={<About />} />
 					<Route path='/search' element={<Search />} />
-					<Route path='/search/details/:id' element={<SearchResults />} />
-					<Route path='/gallery/details/:id' element={<GalleryDetails />} />
+					<Route
+						path='/search/details/:id'
+						element={
+							<SearchResults
+								galleryIds={galleryIds}
+								setGalleryIds={setGalleryIds}
+							/>
+						}
+					/>
+					<Route
+						path='/gallery/details/:id'
+						element={
+							<GalleryDetails
+								galleryIds={galleryIds}
+								setGalleryIds={setGalleryIds}
+							/>
+						}
+					/>
 				</Routes>
 			</main>
 			<footer className='footer'>

@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant&display=swap');
+
 body {
   margin: 0;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: 'Comorant';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

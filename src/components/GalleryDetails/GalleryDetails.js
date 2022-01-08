@@ -4,6 +4,7 @@ import './GalleryDetails.css';
 
 function GalleryDetails(props) {
 	const [details, setDetails] = useState('');
+	const { galleryIds, setGalleryIds } = props; 
 
 	const { id } = useParams();
 
@@ -13,39 +14,57 @@ function GalleryDetails(props) {
 			.then((res) => res.json())
 			.then((res) => {
 				setDetails(res.data);
-				console.log(res);
+				// console.log(res);
 			})
 			.catch((err) => {
 				console.error(err);
 			});
-	}, []);
+	}, [id]);
 
 	if (!details) {
-		return <div>Gallery not found ...</div>;
+		return <div>Gallery Loading ...</div>;
+	}
+
+	function nextPage(index) {
+		
+	}
+
+	function prevPage(index) {
+		
+	}
+
+
+	function openUrl() {
+		window.open(`https://www.artic.edu/artworks/${id}`);
 	}
 
 	return (
 		<div className='details-container'>
+			<div className='text-container'>
+				<h2>
+					Title: <span className='details-text'>{details.title}</span>
+				</h2>
+				<h2>
+					Artist: <span className='details-text'>{details.artist_display}</span>
+				</h2>
+				<h2>
+					Place Of Origin:{' '}
+					<span className='details-text'>{details.place_of_origin}</span>
+				</h2>
+				<h2>
+					Made In: <span className='details-text'>{details.date_end}</span>
+				</h2>
+				<h2>
+					Medium: <span className='details-text'>{details.medium_display}</span>
+				</h2>
+				<button
+					onClick={() => openUrl(`https://www.artic.edu/artworks/${id}`)} className='details-btn'>Visit Artwork</button>
+			</div>
 			<img
-				src={`https://www.artic.edu/iiif/2/${details.image_id}/full/843,/0/default.jpg`}
+				src={`https://www.artic.edu/iiif/2/${details.image_id}/full/550,/0/default.jpg`}
 				alt={details.alt_title}
+				className='details-image'
 			/>
-			<h1>
-				Title: <span className='details-text'>{details.title}</span>
-			</h1>
-			<h2>
-				Artist: <span className='details-text'>{details.artist_display}</span>
-			</h2>
-			<h2>
-				Place Of Origin:{' '}
-				<span className='details-text'>{details.place_of_origin}</span>
-			</h2>
-			<h2>
-				Made In: <span className='details-text'>{details.date_end}</span>
-			</h2>
-			<h2>
-				Medium: <span className='details-text'>{details.medium_display}</span>
-			</h2>
 		</div>
 	);
 }

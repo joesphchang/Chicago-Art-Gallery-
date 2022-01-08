@@ -1,6 +1,9 @@
 .header {
     /* border-bottom: 2px solid black; */
     padding-bottom: 10px;
+    border-bottom: 1px solid black;
+    width: 500px;
+    margin: auto;
 }
 
 .header,
@@ -21,12 +24,11 @@ nav a {
 }
 
 nav a:hover {
-    border: none;
     color: red;
 }
 
 nav a:active {
-
+    color: grey;
 }
 
 

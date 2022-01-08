@@ -27,3 +27,10 @@ a {
     background-color: #A5243A;
     color: white;
 }
+
+.about-container {
+    background-color: #f3f3f3;
+    width: 1000px;
+    height: 900px;
+    margin: auto;
+}

@@ -4,8 +4,8 @@ import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 function Gallery(props) {
+	const { galleryIds, setGalleryIds } = props;
 	const [galleryImages, setGalleryImages] = useState([]);
-	const [galleryIds, setGalleryIds] = useState([]);
 
 	useEffect(() => {
 		const url = 'https://api.artic.edu/api/v1/artworks';

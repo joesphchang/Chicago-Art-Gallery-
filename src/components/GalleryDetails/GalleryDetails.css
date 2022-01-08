@@ -1,0 +1,56 @@
+.details-container {
+	display: grid;
+	grid-template-areas:
+		'image text'
+		'image text'
+		'image text'
+		'image text'
+		'image text';
+	margin-left: auto;
+	margin-right: auto;
+	width: 1100px;
+	height: 800px;
+	background-color: #f3f3f3;
+	margin-top: 10px;
+}
+
+.details-text {
+	display: flex;
+	justify-content: center;
+	grid-area: text;
+	grid-row: 2 / span 2;
+	font-weight: 300;
+}
+
+.details-image {
+	grid-area: image;
+	margin-left: 5px;
+	margin-top: 10px;
+	margin: auto;
+}
+
+.text-container {
+	margin-top: 25%;
+	margin-left: 10px;
+	margin-right: 5px;
+}
+
+.details-btn {
+	cursor: pointer;
+	margin-bottom: 10px;
+	border-radius: 5px;
+}
+
+.details-btn:hover {
+	background: rgb(109, 106, 161);
+	background: linear-gradient(
+		90deg,
+		rgba(165, 162, 214, 1) 0%,
+		rgba(121, 9, 31, 1) 37%,
+		rgba(107, 66, 149, 1) 100%
+	);
+	color: white;
+}
+
+.details-btn:focus {
+}

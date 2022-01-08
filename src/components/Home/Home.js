@@ -94,10 +94,10 @@ function Home(props) {
 				);
 			})}
 			<div>
-				<button onClick={prevSlide} className='home-btn'>
+				<button onClick={prevSlide} className='home-btn-1 home-btn'>
 					←
 				</button>
-				<button onClick={nextSlide} className='home-btn'>
+				<button onClick={nextSlide} className='home-btn-2 home-btn'>
 					→
 				</button>
 			</div>
