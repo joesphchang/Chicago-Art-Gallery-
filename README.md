@@ -34,4 +34,6 @@ https://articjc.netlify.app/
 
 ## Contribution Guidelines:
 
-This section should offer guidance on where and how users can contribute to your code, identify bugs, and propose improvements.
+You can submit an issue on the git-hub to address the issues and concerns you have with the file.
+
+I also made a contribution.md so if you don't feel comfortable displaying yourself public you can do it anonymously!
