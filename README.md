@@ -8,10 +8,29 @@ The website I made is an online gallery walk-through of the Art Institute of Chi
 - CSS
 - JavaScript
 - React Library
+- Netlify to deploy website
 
 ## Getting Started/Installation Instructions:
 
-(link of the website here)
+    1. Fork the repository
+    2. Copy SSH link from the green button "Code"
+    3. Clone down in the terminal within decided folder "git clone ...(ssh link)"
+    4. CD into 'chicago-art-gallery'
+    5. Type 'code .' (note the period is important)
+    6. run "npm start" into terminal to bring up react web-browser to update what you are editing.
+    7. Have Fun!
+
+## Link to the Website
+
+https://articjc.netlify.app/
+
+## Actual Web Preview
+
+![WEB-PREVIEW](src/components/assets/preview.png)
+
+## Wire Frame
+
+![WIRE-FRAME](src/components/assets/wire-frame.png)
 
 ## Contribution Guidelines:
 

@@ -12,9 +12,9 @@
 	margin-bottom: 20px;
 }
 .home-gallery-images {
-	width: 1000px;
-	height: 600px;
-    object-fit: contain;
+	width: 600px;
+	height: 500px;
+	object-fit: contain;
 }
 
 .home-btn {
@@ -24,4 +24,8 @@
 	margin-left: auto;
 	border: none;
 	background-color: white;
+}
+
+.image-tag {
+
 }

@@ -14,7 +14,7 @@ function SearchResults(props) {
 		<div className='gallery-container'>
 			{images.map((image) => {
 				return (
-					<Link to={`/gallery/details/${image.data.id}`} key={image.id}>
+					<Link to={`/gallery/details/${image.data.id}`} key={image.data.id} >
 						<div className='main-gallery-card'>
 							<img
 								src={
@@ -22,7 +22,6 @@ function SearchResults(props) {
 									`https://www.artic.edu/iiif/2/${image.data.image_id}/full/350,/0/default.jpg`
 								}
 								alt={image.data.title}
-								key={image.data.id}
 							/>
 							<div className='card-title'>
 								<h3>
