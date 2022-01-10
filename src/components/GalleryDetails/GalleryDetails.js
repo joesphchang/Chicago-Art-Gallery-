@@ -4,10 +4,11 @@ import './GalleryDetails.css';
 
 function GalleryDetails(props) {
 	const [details, setDetails] = useState('');
-	const { galleryIds, setGalleryIds } = props; 
+	const { galleryIds, setGalleryIds } = props;
 
 	const { id } = useParams();
 
+	const length = galleryIds.length;
 	useEffect(() => {
 		const url = `https://api.artic.edu/api/v1/artworks/${id}`;
 		fetch(url)
@@ -24,15 +25,6 @@ function GalleryDetails(props) {
 	if (!details) {
 		return <div>Gallery Loading ...</div>;
 	}
-
-	function nextPage(index) {
-		
-	}
-
-	function prevPage(index) {
-		
-	}
-
 
 	function openUrl() {
 		window.open(`https://www.artic.edu/artworks/${id}`);
@@ -58,13 +50,18 @@ function GalleryDetails(props) {
 					Medium: <span className='details-text'>{details.medium_display}</span>
 				</h2>
 				<button
-					onClick={() => openUrl(`https://www.artic.edu/artworks/${id}`)} className='details-btn'>Visit Artwork</button>
+					onClick={() => openUrl(`https://www.artic.edu/artworks/${id}`)}
+					className='details-btn'>
+					Visit Artwork
+				</button>
 			</div>
-			<img
+			<div className='details-image' style={{ backgroundImage: `url(https://www.artic.edu/iiif/2/${details.image_id}/full/843,/0/default.jpg)` }}>
+			</div>
+			{/* <img
 				src={`https://www.artic.edu/iiif/2/${details.image_id}/full/550,/0/default.jpg`}
 				alt={details.alt_title}
 				className='details-image'
-			/>
+			/> */}
 		</div>
 	);
 }

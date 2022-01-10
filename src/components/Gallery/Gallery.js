@@ -33,13 +33,14 @@ function Gallery(props) {
 					})
 					.map((gallery) => {
 						return (
-							<Link to={`details/${gallery.id}`} key={gallery.id}>
+							<Link to={`details/${gallery.id}`} key={gallery.id} className='gallery-card'>
 								<div className='main-gallery-card'>
-									<div className='card-image'>
-										<img
-											src={`https://www.artic.edu/iiif/2/${gallery.image_id}/full/350,/0/default.jpg`}
+									<div className='card-image' style={{ backgroundImage: `url(https://www.artic.edu/iiif/2/${gallery.image_id}/full/843,/0/default.jpg)` }} >
+										{/* <img
+											src={`https://www.artic.edu/iiif/2/${gallery.image_id}/full/843,/0/default.jpg`}
 											alt={gallery.alt_title}
-										/>
+											className='image'
+										/> */}
 									</div>
 									<div className='card-title'>
 										<h3>

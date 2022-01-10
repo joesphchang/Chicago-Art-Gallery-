@@ -14,15 +14,20 @@ function SearchResults(props) {
 		<div className='gallery-container'>
 			{images.map((image) => {
 				return (
-					<Link to={`/gallery/details/${image.data.id}`} key={image.data.id} >
+					<Link to={`/gallery/details/${image.data.id}`} key={image.data.id}>
 						<div className='main-gallery-card'>
-							<img
+							<div
+								className='main-gallery-image'
+								style={{
+									backgroundImage: `url(https://www.artic.edu/iiif/2/${image.data.image_id}/full/843,/0/default.jpg)`,
+								}}></div>
+							{/* <img
 								src={
 									image.data &&
 									`https://www.artic.edu/iiif/2/${image.data.image_id}/full/350,/0/default.jpg`
 								}
 								alt={image.data.title}
-							/>
+							/> */}
 							<div className='card-title'>
 								<h3>
 									Title:{' '}
