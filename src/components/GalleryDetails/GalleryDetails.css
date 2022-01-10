@@ -20,6 +20,7 @@
 	grid-area: text;
 	grid-row: 2 / span 2;
 	font-weight: 300;
+	font-size: 80%;
 }
 
 .details-image {

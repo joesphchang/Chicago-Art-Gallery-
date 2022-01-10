@@ -58,8 +58,9 @@ function App() {
 				<h4>Website by Joey Chang</h4>
 				<div className='footer-image'>
 					<img src={Logo} alt='chicago-art-institute' className='image' />
+					<a href='https://www.linkedin.com/in/joesphchang/'>LinkedIn</a>
 				</div>
-				<a href='https://www.linkedin.com/in/joesphchang/'>LinkedIn</a>
+				
 			</footer>
 		</div>
 	);
