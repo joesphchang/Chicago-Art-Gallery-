@@ -39,13 +39,13 @@ div a:hover {
 
 .btn-search {
     border: none;
-    background-color: white; 
+    background-color: #F6F5F3; 
 }
 
 .btn-search:hover {
     border: 1px solid black;
     background-color: #A5243A;
-    color: white;
+    color: #F6F5F3;
 }
 
 .main-gallery-image {
