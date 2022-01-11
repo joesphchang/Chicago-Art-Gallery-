@@ -20,6 +20,14 @@
 	font-size: medium;
 }
 
+section a:hover {
+	margin: auto;
+	border: none; 
+	width: 74%;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+
 .card-image {
 	object-fit: contain;
 	width: 360px;
@@ -34,15 +42,3 @@
 	font-weight: 200;
 	margin-left: 10px;
 }
-
-section a:hover {
-	border: none;
-}
-
-/* .image {
-    border: 2px solid red; 
-    width: 200px;
-    height: 100%; 
-    margin: 0;
-    padding: 0; 
-} */

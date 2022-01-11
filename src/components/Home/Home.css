@@ -22,5 +22,22 @@
 	margin-right: auto;
 	margin-left: auto;
 	border: none;
+	font-size: large;
 	background-color: #F6F5F3;
+}
+
+.home-btn-1:hover {
+	color: #A5243A; 
+}
+
+.home-btn-1:active {
+	color: lightslategray;
+}
+
+.home-btn-2:hover {
+	color: #A5243A; 
+}
+
+.home-btn-2:active {
+	color: lightslategray;
 }
