@@ -12,19 +12,13 @@
 	align-items: center;
 	flex-direction: column;
 	justify-content: center;
+	flex-wrap: nowrap;
 	width: 365px;
 	height: 500px;
 	color: black;
 	border-left: 1px solid black;
 	border-bottom: 1px solid black;
 	font-size: medium;
-}
-
-section a:hover {
-	margin: auto;
-	border: none; 
-	width: 74%;
-	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
 
